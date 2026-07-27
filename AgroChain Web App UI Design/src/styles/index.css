@@ -1,0 +1,68 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* Wholesale Fruits Slider Custom Styles */
+.wholesale-fruits-slider .slick-dots {
+  bottom: -50px;
+}
+
+.wholesale-fruits-slider .slick-dots li button:before {
+  font-size: 12px;
+  color: #16a34a;
+  opacity: 0.5;
+}
+
+.wholesale-fruits-slider .slick-dots li.slick-active button:before {
+  color: #16a34a;
+  opacity: 1;
+}
+
+.wholesale-fruits-slider .slick-prev,
+.wholesale-fruits-slider .slick-next {
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+}
+
+.wholesale-fruits-slider .slick-prev {
+  left: -60px;
+}
+
+.wholesale-fruits-slider .slick-next {
+  right: -60px;
+}
+
+.wholesale-fruits-slider .slick-prev:before,
+.wholesale-fruits-slider .slick-next:before {
+  font-size: 50px;
+  color: #16a34a;
+  opacity: 0.75;
+}
+
+.wholesale-fruits-slider .slick-prev:hover:before,
+.wholesale-fruits-slider .slick-next:hover:before {
+  opacity: 1;
+}
+
+/* Mobile responsive slider arrows */
+@media (max-width: 1024px) {
+  .wholesale-fruits-slider .slick-prev {
+    left: 10px;
+  }
+  
+  .wholesale-fruits-slider .slick-next {
+    right: 10px;
+  }
+  
+  .wholesale-fruits-slider .slick-prev,
+  .wholesale-fruits-slider .slick-next {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .wholesale-fruits-slider .slick-prev:before,
+  .wholesale-fruits-slider .slick-next:before {
+    font-size: 40px;
+  }
+}

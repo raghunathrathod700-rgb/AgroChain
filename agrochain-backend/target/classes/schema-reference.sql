@@ -1,0 +1,13 @@
+-- AgroChain — logical MySQL schema (Hibernate `ddl-auto=update` creates/updates tables).
+-- Use this as documentation or as a baseline for DBA review.
+
+-- roles (ADMIN, FARMER, BUYER)
+-- users
+-- user_roles  (user_id, role_id)
+-- products    (farmer_id -> users)
+-- product_orders (buyer_id, product_id, status, totals, delivery)
+-- payments    (order_id unique, method COD/UPI, upi_transaction_id nullable)
+-- reviews     (buyer_id, farmer_id, order_id unique nullable)
+-- messages    (sender_id, receiver_id, order_id nullable)
+-- notifications (user_id, type, is_read, related_entity_id)
+-- activity_logs (actor_user_id, action, entity_type, entity_id)

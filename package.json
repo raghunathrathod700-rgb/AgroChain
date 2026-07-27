@@ -1,0 +1,16 @@
+{
+  "name": "curserai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm --prefix \"AgroChain Web App UI Design\" run dev",
+    "backend": "mvn -f \"agrochain-backend/pom.xml\" spring-boot:run",
+    "start": "npm run backend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
